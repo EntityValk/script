@@ -6,8 +6,8 @@ local Section = Tab:NewSection("Flight")
 
 
 Section:NewButton("Flying/Speed", "Flying/Speed", function()
-    print("Clicked")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Gamerboy1511/Flight/main/Flight"))()
 end)
 
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Gamerboy1511/Flight/main/Flight"))()
+
