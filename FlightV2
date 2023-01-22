@@ -1,12 +1,14 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("EntityValk#9999", "Ocean")
-local Tab = Window:NewTab("Home")
-local Section = Tab:NewSection("Flight")
 
+--Main
+local Main = Window:NewTab("Main Commands")
+local MainSection = Main:NewSection("Commands")
 
-Home:NewButton("Flying/Speed", "Flying/Speed", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EntityValk/Flight/main/Flight"))()
+--Command scripts
+
+MainSection:NewButton("Fly", "E to toggle flight", function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/EntityValk/Flight/main/Flight"))()
 end)
-
 
 
