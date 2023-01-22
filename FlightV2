@@ -5,7 +5,7 @@ local Section = Tab:NewSection("Flight")
 
 
 Home:NewButton("Flying/Speed", "Flying/Speed", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Gamerboy1511/Flight/main/Flight"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EntityValk/Flight/main/Flight"))()
 end)
 
 
