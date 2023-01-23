@@ -12,4 +12,12 @@ MainSection:NewButton("Fly", "E to toggle flight", function()
  loadstring(game:HttpGet("https://raw.githubusercontent.com/EntityValk/Flight/main/Flight"))()
 end)
 
-
+MainSection:NewToggle("Superhuman", "Gives speed boost + jump boost", function(state)
+  if state then
+      game.players.LocalPlayer.Character.Humanoid.Walkspeed = 120
+      game.players.LocalPlayer.Character.Humanoid.JumpPower = 120
+  else  
+      game.players.LocalPlayer.Character.Humanoid.Walkspeed = 120
+      game.players.LocalPlayer.Character.Humanoid.JumpPower = 120
+    end
+end)
